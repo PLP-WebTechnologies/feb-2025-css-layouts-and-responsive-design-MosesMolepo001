@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Web Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h1>My Website</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Layout -->
+  <main>
+    <!-- Roman Numeral List -->
+    <section>
+      <h2>Table Contents</h2>
+      <ol type="I">
+        <li>Name</li>
+        <li>Address</li>
+        <li>Mobile</li>
+        <li>Email</li>
+      </ol>
+    </section>
+
+    <!-- Image Section -->
+    <section>
+      <img src="img1.jpg" alt="Pexels Sample" />
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Contacts Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jane Doe</td>
+            <td>123 Main St</td>
+            <td>+123456789</td>
+            <td>jane@example.com</td>
+          </tr>
+          <tr>
+            <td>John Smith</td>
+            <td>456 Maple Ave</td>
+            <td>+987654321</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Alice Brown</td>
+            <td>789 Elm St</td>
+            <td>+555123456</td>
+            <td>alice@example.com</td>
+          </tr>
+          <tr>
+            <td>Bob Johnson</td>
+            <td>321 Oak St</td>
+            <td>+444987321</td>
+            <td>bob@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary Green</td>
+            <td>654 Pine Rd</td>
+            <td>+333654789</td>
+            <td>mary@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" minlength="6" required />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="role">Select Role</label>
+        <select id="role" name="role" required>
+          <option value="">--Please choose an option--</option>
+          <option value="student">Student</option>
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+        </select>
+
+        <p>Gender</p>
+        <label><input type="radio" name="gender" value="male" required /> Male</label>
+        <label><input type="radio" name="gender" value="female" /> Female</label>
+        <label><input type="radio" name="gender" value="other" /> Other</label>
+
+        <p>Interests</p>
+        <label><input type="checkbox" name="interests" value="coding" /> Coding</label>
+        <label><input type="checkbox" name="interests" value="design" /> Design</label>
+        <label><input type="checkbox" name="interests" value="gaming" /> Gaming</label>
+
+        <input type="submit" value="Register" />
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
